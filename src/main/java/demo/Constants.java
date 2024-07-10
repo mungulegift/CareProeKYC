@@ -6,36 +6,36 @@ public final class Constants {
     }
     public static final String ESIGNET_SERVICE_URL = "https://esignet.zam-dst.mosip.net";
 
-    public static final String CLIENT_ID = "Op2I8F5FwnLRFchKfd6N8-GiqLBMNcgQg1OUA_0n-wM";
+    public static final String CLIENT_ID = "bfgC0STwXNn7EkPksKCc91VQytFwad9XJPWSyaClZNE";
 
     public static final String CLIENT_PRIVATE_KEY = """
             -----BEGIN PRIVATE KEY-----
-            MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC22gBuoutS/7sU
-            nHCYRB82TCGwfLDAAddCzzZHGkYOWpQbzYlW2G9xoJXtQjtSQywykxPoky/lfBBZ
-            zlyRmu3OTPS+scitSpT9wYO+dj2vdyie4yp4CY0tbBFzNeVmGxVt24638d73EBrm
-            iTL0PiOHUPVY2UzDCl4PFtKYa0mZY5s02O92x2M88R0k+wxYJbW7YygLFVyoxDIs
-            lN96Z0skJS82cM47yNcjd7VhtO+Zn3rz5M2hbMbhJHkYmZLdG9T0rTauogLN1YDK
-            6jjELrSHiLWBt7buzZ81RcgX/0uisp20wMh/QWxCyCVwIPxcqTaW9VQh4Gja5zFN
-            ArITzhbTAgMBAAECggEAKeGnBbBVXE5s6FyowYeg6ovnj4gP5/rD9m6FzSVsdG80
-            y2V5lqW+aPVSQeTQt5fhMLhVcAj+iH6xNBC7TTKCU6V2zZLlFyQlGjZP2bk1idIu
-            QK5hlNsDNisxmAT5RTjg4KfQebtxyX8r2jAEtsLg2malu7MSDP576tLca8LvOa2e
-            vP1wo+pyZBUwtYnkAw6EHwZm0Ye6lfKTqIw9mzgvxYrCp3uxV23iV3FTqkJRE/vc
-            akUe9XRh1RDrERraPI/vNTCrjDc/bdLi4m8GEAtDMdaf0NlTL1L7JZjvM3B6bmzT
-            q5t0Dz39UmjoI/2GO9OsEbTbV+s6RCXiZCurzXD28QKBgQDfwa9YARLoAsMG0Z9M
-            gyN+FuBGBl/VTzAGEogqQhPkS8wOMFkNI/yxnf0dPU25iwEU6wowWI8XNBnehFLL
-            3klDyWpxiDVnZMl7+nUT4mF1ib7I0/n/RlAlaLq6MwGlSUYgWkbMUVcjc+6g9Fld
-            4wmEvBM1cOpvuhtPAUcL2sVEOwKBgQDRM1e/GsmsqIKySmCvh3iwh8QeIq5UcuJo
-            C4VugXDE50dN1oXXhGCfvjTov0oTsBasvSiQp5zxmYTHDln91aJBrWuVz0ft/EDK
-            EwWEINzLnkWBPxde3PaEpxLk49HORlX1oQcHVoUx3QSNhiMpdeP7O4wqg3wVe5cX
-            ltJH19jGSQKBgQCO+R+lR+pgvYMIlGEJbrH7G3rqw5/wmMzC1IyVE+vJ8HTOjC4a
-            q2gHxj+5szY63IswZo74HV4xIWV2PW76PWrrGYQeTz5wdoIX6g1tSzWi+QUjJe+U
-            IcWMYcMOvxDKIGviuEyMuVzIlodf6UJBL5Uhb1uGxkPGaFCSxuoytPNfiQKBgQCS
-            ul4a7aDx9qbkggJaWrwtpKvLLyvykzl1HE+T+DmuAUEjuQja5kAXCoN1k2VTdbgR
-            pAKlosoTMkfMjaZUwNgzFH1W77FVnA2dLcY6rAnwzquVQTkVEgnddIlt/NQUx4RW
-            6YBShz6YgJpG4QQcelFSzqs6zknjj3Gj2+bU+PFT8QKBgGI23LkHKoSfCEwHfeWs
-            C95ci5gJPTQvF0E/CVLzilJHYM510gKDOPEcvNSXmC+cCFHAuTuOPZpVpNvbdG/M
-            kYxY2mi13d7p6DBipk7Gnz/KZkwAuP927lIuhGRtUgMf1M2QjMrUcpMem1z9DTfd
-            i2sV4T8OLsNuJpx8gs2tayK3
+            MIIEwgIBADANBgkqhkiG9w0BAQEFAASCBKwwggSoAgEAAoIBAgCV41YfWq2fI3yE
+            dDtXNnPk7VEk9ozvjQdAsirxDfccfsQaURie4L6ddYVL+yKojFXtudDYvoL9Pl2b
+            V0YgzzZB8pLrUiUFaRaqr3yPeJu3v2BhA3TsENqhhLFXazqM2mKPhCeQ+Xi3gyfx
+            f3/0d/CULyF49jBB2X/FzvvMc2D7kNEMbPPqnX0NZMMbFh7qgHbx52QVy7O2Ax+y
+            p78YNRL6YBasjPkqp0gLuvcFVNFVI6JsjaXXVe5kM5BOcD/ytnpegplOafS3l37n
+            oxcyrdYIAESF5qTIBqKjKvvud9f5y1JBg7jU3cyMq3a0Wz9SVNgbiPczn28IUl/W
+            VKvpzsWUIwIDAQABAoIBAgCJcRfk0mKInaKtVmOfmjf1gMO6kDY152zyHy4PMo4Y
+            3Aj4VMqtzUoc2smrHZLvWRfmUFA4n6E/lLODISkWJswK9uNP01hNOMrnItmmOaMY
+            f+1hqCjL2ryQBTwU/CeJRyu/jCA36PqP1D2JTi/HvT+msf0QjTc8+rMWcLEmDdqt
+            c0wcERz2xNag2PFulVLOBZYGQGfJTMlIEBabWoS1G0Kx8nvLSvvTXC7izP6llFnz
+            AUcmnfMIbesXd7oay9x5J4IpTt7Lijnj+eD6WiekDprO7BVqAa8bOdAOar5VsNcv
+            /5mrPVyTwL6w5f8MNJzdodRBuzwP+t17Jmox8udeS3LBMQKBgQ2PVfrnJp5jijpz
+            bK5yMxPVlEqvK8IyXDRxKtMhOLgIFVmU8veeikFYPVQnKjdpx743uq+lOFGBBSoJ
+            ZB3B/uE3GsOBUvgnRieilL8pYVqzLv8yKQJPgkpSFxds91PiohrejtSPgpMQsCtE
+            cSE931BbRGwCMkofIDxIqacBgeJhCwKBgQsNw6YEmkJvu6x6h29bS3loY0/0Zqup
+            JFun/nLbV+BS30QkJMxNFEvqmhUBd+h2WLEKdoXcKddCbfsLleCBqg8S18OgZhvI
+            qiorQeOT4sBGoeP5iEDKiJl1XVSYaCiD/6dZyxtdL1qely63Rh98Efnz8VksEmoW
+            dT1c2mnoyWi4SQKBgQf3yAAtP8Ymm50JIj3HoTfwcrkIAeCVExVFwnJZvSh2p4UC
+            P1s97+PB5BfFA8uX/uVJfgukPFm4RL6U0h2iVxEj/jgPkB99hH3ZzSofOLPBQsZ2
+            RR60dc0SO7tqLlM+gx7i1G8W/RVJ4xsploiAAO8JEkWdbMudSqXh1L7r5dSOTQKB
+            gQHnex7siA6N5QzPhuleFuBxZTpu5gkIeGT5ydHLi5XvcNryRwyS8r4pSiX4PMnl
+            KV5GaSiiRur4XK30zvsAG2XBXz4qMazzoqzlCtLDtTpecKEvaZOP0HxvRYa/QqJI
+            KxCPXXf3U6MO0wiPNhtSal5e8eLkvr9b4xKRHmdEXP4XUQKBgQEocYWKCwVqzr3X
+            +uZt7IIpiL0LhgFicko4zeE+LTcGrYg99JtQRl3MEV1X4+rvnXRrqALRigc1Xuc6
+            LaHV26ZoW7HN7denF22fIcFUw7bCQFF9b0toMSMDU8dazHT6I825vIHp/FTyWSSD
+            ib5xMFkzkeAcBenUkqqWjih4oxJzWA==
             -----END PRIVATE KEY-----""";
 
     public static final String CALLBACK_URL = "http://localhost:8080/demo/api/clientDetails";
