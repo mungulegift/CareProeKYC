@@ -31,13 +31,13 @@ public class OAuthController {
 
     @GetMapping("/clientDetails")
     @ResponseBody
-    public String handleAuthorizationCode(@RequestParam String code, HttpServletResponse response) throws Exception {
+    public ResponseEntity<Map<String, Object>> handleAuthorizationCode(@RequestParam String code, HttpServletResponse response) throws Exception {
         String tokenResponse = oauthService.getAccessToken(code);
         Map<String, Object> result = oauthService.handleTokenResponse(tokenResponse);
 
         if (result.containsKey("error")) {
             Map<String, Object> error = castToMap(result.get("error"));
-            return "HTTP code error: " + error.get("statusCode") + " Reason: " + error.get("message");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("error", error));
         } else {
             Map<String, Object> data = castToMap(result.get("data"));
             String accessToken = (String) data.get("accessToken");
@@ -48,14 +48,9 @@ public class OAuthController {
             cookie.setPath("/");
             response.addCookie(cookie);
 
-            response.sendRedirect("/dashboard");
-            return "Redirecting to dashboard...";
+            // Returning the claims data
+            return ResponseEntity.ok(data);
         }
-    }
-
-    @GetMapping("/dashboard")
-    public String dashboard() {
-        return "dashboard";
     }
 
     @SuppressWarnings("unchecked")
