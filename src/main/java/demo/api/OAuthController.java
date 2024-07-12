@@ -35,6 +35,8 @@ public class OAuthController {
         String tokenResponse = oauthService.getAccessToken(code);
         Map<String, Object> result = oauthService.handleTokenResponse(tokenResponse);
 
+        System.out.println("Here is the access token "+tokenResponse);
+
         if (result.containsKey("error")) {
             Map<String, Object> error = castToMap(result.get("error"));
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("error", error));
@@ -50,6 +52,7 @@ public class OAuthController {
 
             // Returning the claims data
             return ResponseEntity.ok(data);
+
         }
     }
 
