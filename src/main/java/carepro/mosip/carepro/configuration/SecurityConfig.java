@@ -1,4 +1,4 @@
-package demo.configuration;
+package carepro.mosip.carepro.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
