@@ -30,37 +30,37 @@ public class OAuthService {
 
     private static final Logger logger = LoggerFactory.getLogger(OAuthService.class);
 
-    public static final String ESIGNET_SERVICE_URL = "https://esignet.zam-dst.mosip.net";
-    public static final String CLIENT_ID = "bfgC0STwXNn7EkPksKCc91VQytFwad9XJPWSyaClZNE";
+    public static final String ESIGNET_SERVICE_URL = "https://esignet-ekyc.grz.gov.zm";
+    public static final String CLIENT_ID = "RvyY2Lj7BRTR5yT2KntqL8UqUrltUZNvmrmBuq0ekOk";
     public static final String CALLBACK_URL = "http://localhost:8080/demo/api/clientDetails";
 
     private static final String PRIVATE_KEY = "-----BEGIN PRIVATE KEY-----\n" +
-            "MIIEwgIBADANBgkqhkiG9w0BAQEFAASCBKwwggSoAgEAAoIBAgCV41YfWq2fI3yE\n" +
-            "dDtXNnPk7VEk9ozvjQdAsirxDfccfsQaURie4L6ddYVL+yKojFXtudDYvoL9Pl2b\n" +
-            "V0YgzzZB8pLrUiUFaRaqr3yPeJu3v2BhA3TsENqhhLFXazqM2mKPhCeQ+Xi3gyfx\n" +
-            "f3/0d/CULyF49jBB2X/FzvvMc2D7kNEMbPPqnX0NZMMbFh7qgHbx52QVy7O2Ax+y\n" +
-            "p78YNRL6YBasjPkqp0gLuvcFVNFVI6JsjaXXVe5kM5BOcD/ytnpegplOafS3l37n\n" +
-            "oxcyrdYIAESF5qTIBqKjKvvud9f5y1JBg7jU3cyMq3a0Wz9SVNgbiPczn28IUl/W\n" +
-            "VKvpzsWUIwIDAQABAoIBAgCJcRfk0mKInaKtVmOfmjf1gMO6kDY152zyHy4PMo4Y\n" +
-            "3Aj4VMqtzUoc2smrHZLvWRfmUFA4n6E/lLODISkWJswK9uNP01hNOMrnItmmOaMY\n" +
-            "f+1hqCjL2ryQBTwU/CeJRyu/jCA36PqP1D2JTi/HvT+msf0QjTc8+rMWcLEmDdqt\n" +
-            "c0wcERz2xNag2PFulVLOBZYGQGfJTMlIEBabWoS1G0Kx8nvLSvvTXC7izP6llFnz\n" +
-            "AUcmnfMIbesXd7oay9x5J4IpTt7Lijnj+eD6WiekDprO7BVqAa8bOdAOar5VsNcv\n" +
-            "/5mrPVyTwL6w5f8MNJzdodRBuzwP+t17Jmox8udeS3LBMQKBgQ2PVfrnJp5jijpz\n" +
-            "bK5yMxPVlEqvK8IyXDRxKtMhOLgIFVmU8veeikFYPVQnKjdpx743uq+lOFGBBSoJ\n" +
-            "ZB3B/uE3GsOBUvgnRieilL8pYVqzLv8yKQJPgkpSFxds91PiohrejtSPgpMQsCtE\n" +
-            "cSE931BbRGwCMkofIDxIqacBgeJhCwKBgQsNw6YEmkJvu6x6h29bS3loY0/0Zqup\n" +
-            "JFun/nLbV+BS30QkJMxNFEvqmhUBd+h2WLEKdoXcKddCbfsLleCBqg8S18OgZhvI\n" +
-            "qiorQeOT4sBGoeP5iEDKiJl1XVSYaCiD/6dZyxtdL1qely63Rh98Efnz8VksEmoW\n" +
-            "dT1c2mnoyWi4SQKBgQf3yAAtP8Ymm50JIj3HoTfwcrkIAeCVExVFwnJZvSh2p4UC\n" +
-            "P1s97+PB5BfFA8uX/uVJfgukPFm4RL6U0h2iVxEj/jgPkB99hH3ZzSofOLPBQsZ2\n" +
-            "RR60dc0SO7tqLlM+gx7i1G8W/RVJ4xsploiAAO8JEkWdbMudSqXh1L7r5dSOTQKB\n" +
-            "gQHnex7siA6N5QzPhuleFuBxZTpu5gkIeGT5ydHLi5XvcNryRwyS8r4pSiX4PMnl\n" +
-            "KV5GaSiiRur4XK30zvsAG2XBXz4qMazzoqzlCtLDtTpecKEvaZOP0HxvRYa/QqJI\n" +
-            "KxCPXXf3U6MO0wiPNhtSal5e8eLkvr9b4xKRHmdEXP4XUQKBgQEocYWKCwVqzr3X\n" +
-            "+uZt7IIpiL0LhgFicko4zeE+LTcGrYg99JtQRl3MEV1X4+rvnXRrqALRigc1Xuc6\n" +
-            "LaHV26ZoW7HN7denF22fIcFUw7bCQFF9b0toMSMDU8dazHT6I825vIHp/FTyWSSD\n" +
-            "ib5xMFkzkeAcBenUkqqWjih4oxJzWA==\n" +
+            "MIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAgCFfe+Hv6IzxoXo\n" +
+            "43OzELhTIij4lGwBCDbxbaJO4eAyVLlfzntppVZI2q3LosXYqKip4mS5F8aXGP08\n" +
+            "cEGumcK8lHHFmvZn9ZHjxPALNdZTu5jrGTS0RuR5qGu7MTtOsfHUIFjDn1zXf7Di\n" +
+            "firGSsPUZ5w9sfPmN2A1+e2D4Fza6sLKCGmeq4P4+PsFn8dncqoSZ1iqRerXll+D\n" +
+            "z+nd7JQENjp2OvwcrHbwXroNlTUL3vpjS4IcDjr5qrH2waVL78smv//pBbNYLTDj\n" +
+            "3vEJ5o3mPUjUj3tpgoAfRUgH0EJnlNlcxo8GSvKszvPoJDaGiR1eI/3XHnBq2DD7\n" +
+            "18775f/HpQIDAQABAoIBAREXcb64u4TTizupO5wWrPL/8az6G+X57kb1GY3t/62S\n" +
+            "CXYJ0uVQ5P5I+W2UNq6p0YaG1QyZzbR035+IY/B+AV/xxateTuQ6neZCxdU5nGp2\n" +
+            "H3sibAwU85XcCYcbI5PM1sCpL5REaDezQquNKd7fnbkpVujTSv4T4v6mNFHpPRpO\n" +
+            "Z32ptAEiZvUMi4qE8Itc/FNa3/T7mrBxsKY18RRlCB7c+FDBNExVnIldT4jcz9PZ\n" +
+            "EM7wz65xHUp375Z5OnKese4g3VoLjJbj3diqAdEVtz1AA37fJ7RTMk7BnKeGAwFR\n" +
+            "Su1nb5MhxdGTjNZLj5K6M1fz9c3dNnFRZVNFmgVWxqXhAoGBDqEq0iYpfB81VOYA\n" +
+            "hrD1G5dKvFMUtnIFemyDZTDlVmzYWo/YSKxeRrk7UcukFuuqd7gjaElXCcdsUsia\n" +
+            "Min2oQWQjWaktmLmedGUt9bWvyIZbUEl9jFnTEtRMLXfG/zba/ddM7dZ+QUHB+O0\n" +
+            "JwX2+nMWkK6vsp+b9IlbGYiP65tZAoGBCR/zegjdEP1SgQXT0VDRlmcfUQS9dshX\n" +
+            "mKtXKDF2w+zRvevkTRCh4M0vhblQAn7BYWIZd9f/9sjUG49kOc+n7uMDtqNsSZ0P\n" +
+            "p5ZWOrEME2G18SYrqUvo1+/HsCpaBgGkhXJGdIWaRT7pIizhX+Jjo4InVfn/X+bh\n" +
+            "mumwBAsQJyEtAoGBDOwAZbS9idwLAF1T86SUK3W71pJPxkL6YcM9YAELYQYtJ/jM\n" +
+            "YoyVjUSJh9smqfQpEyv7Yl79WS7jmE+GG28DYAEJSEx0ioDa8JjVEnjaH+MfsGgN\n" +
+            "/uJuSm5wXWUXl6IFsdzBXy/Bcfol1qsi8iELoPZM5SjXGiBu4VT9uZTtAn+pAoGB\n" +
+            "AsB9GJ/VtAsCN+E/CZCbNQXyvud0EH/JU0TRa1DHpb0lYGblGozalUasf2LtC2OZ\n" +
+            "BLqmPauKCa51sb4kFv9WgUg71Xgh722LzBod9WNx5eKBEbJWVp+LIJyzF6EeN1OF\n" +
+            "f62ALCIi7aFUhDcO3XEUZbqaDGbyKsUh4yt5Jy8C9xodAoGABWcQczvnkTm0908/\n" +
+            "kctuZSL+1CNEkOwEU5bbLDzM6rGMs29WWHsODMFMdJWQXzGhhx2X0ygSX1lA2XMe\n" +
+            "VbAVdg03i1mIdxcju75GwvyLm+Sko6AuV3owSJV12nmAwGgRxFvEhFKZcJHS7qFz\n" +
+            "VIHhExZyljlSlYCturGri3fpzjg=\n" +
             "-----END PRIVATE KEY-----";
     public RSAPrivateKey getPrivateKey() throws Exception {
         try {
