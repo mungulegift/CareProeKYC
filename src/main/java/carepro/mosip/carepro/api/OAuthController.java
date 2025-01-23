@@ -56,4 +56,14 @@ public class OAuthController {
             return errorResponse;
         }
     }
+//    @GetMapping("/my-name")
+//    public Map<String, Object> getName(@RequestParam ("name") String name) {
+//
+//        try {
+//            oauthService.
+//        }
+//    }
+
 }
+
+
